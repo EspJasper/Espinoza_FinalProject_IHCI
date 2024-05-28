@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    width: 100%;
+    height: 400px;
+    background-image: url("_DSC6620.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1.5px solid #f4f5f0;
+}
+body{
+    background: linear-gradient(#101010, #556347);
+    color: #f4f5f0;
+    font-size: 1rem;
+
+}
+.container{
+    padding: 15px 10%;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+.tabs-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 1.5rem;
+}
+.tabs a{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    transition: .2s;
+    width: 1000px;
+}
+.tabs a:hover{
+    font-size: 1.5rem;
+
+}
+.select{
+    text-align: center;
+
+}
+.long{
+    margin: 0px 2px;
+}
+.top{
+    position: sticky;
+    bottom: 1.2rem;
+    background-color: #141313de;
+    padding: 12px;
+    margin: 2rem;
+    margin-bottom: 1.2rem;
+    width: 150px;
+    border-radius: 10%;
+}
+.header-text{
+    margin-top: 12rem;
+    font-size: 3rem;
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+#headergreeting{
+    font-size: 1.5rem;
+}
+#headername{
+    margin-top: -15px;
+}
+#headerquote{
+    font-size: 1.2rem;
+
+}   
+.short-intro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    justify-content: center;
+
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+#q1{
+    position: relative;
+    font-size: 5rem;
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+#JaProfile{
+    justify-content: center;
+    align-content: center;
+    border: 0px;
+    width: 450px;
+    height: 500px;
+    border-radius: 50px;
+}
+#intro-parag{
+    margin: 0px 30px 20px;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+.hobsaint{
+    margin: 0px 30px 20px;
+    line-height: 30px;
+}
+.hobsaint-title{
+    font-size: 2rem;
+}
+.hobsaint-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.5rem;
+}
+#q2{
+    position: relative;
+    font-size: 5rem;
+    margin-bottom: 150px;
+    margin-bottom: 80px;
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+.q2{
+    position: relative;
+    font-size: 5rem;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+.parag{
+    text-align: justify;
+    font-size: 1.5rem;
+}
+.Top_Interest_Hobbies{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+    transition: .5s;
+}
+.topIH{
+    position: relative; 
+    width: 15rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+.bg{
+    position: absolute;
+    border: 1px solid #556347;
+    background-color: #556347;
+    box-shadow:10px 10px #101010;
+    width: 300px;
+    height: 150px;
+    left: 50%;
+    top: 50%;   
+    transform: translate(-50%, -50%);
+    transition: .5s;
+    width: 15rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+.front-text{
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    left: 50%;
+    top: 50%;   
+    transform: translate(-50%, -50%);
+    padding: 3rem;
+    width: 300px;
+    transition: .5s;
+}
+.sentence{
+    text-align: justify;
+    font-size: 1rem;
+    padding: 1rem;
+    transition: .5s;
+    width: 300px;
+    margin: .5rem;
+    opacity: 0;
+}
+.pick{
+    margin-top: .2rem;
+    position: relative;
+    width: 300px;
+    font-size: 1rem;
+    transition: .5s;
+}
+.pixcw1{
+    position: absolute;
+    width: 100px;
+    visibility: hidden;
+    transition: .5s;
+    margin-top: 20px;
+}
+.pixcw2{
+    position: absolute;
+    width: 250px;
+    visibility: hidden;
+    transition: .5s;
+}
+.pixlw{
+    position: absolute;
+    height: 100px;
+    visibility: hidden;
+    transition: .5s;
+}
+.bg:hover{
+    background-color: transparent;  
+    box-shadow: none;
+    border: 0px transparent;
+    .front-text{
+        font-size: 5rem;
+        left: 50%;
+        top: 50%;
+        transform: translate(-80%, -110%);
+    }
+}
+.bg:hover .sentence{
+    opacity: 1;
+    font-size: 1.4rem;
+}
+.overflow{
+    height: 140px;
+    overflow: hidden;       
+    transition: .5s;
+    
+}
+.bg:hover{
+    cursor: pointer;
+}
+.bg:hover{
+    .overflow{
+        height: 500px;  
+        bottom: 250px;
+    }
+}
+.bg:hover .pixcw1{
+    width: 700px;
+    visibility: visible;
+    left: 50%;
+    top: 50%;
+    transform: translate(10%, 60%);
+    box-shadow:10px 10px #101010;
+}
+.bg:hover .pixcw2{
+    width: 350px;
+    visibility: visible;
+    left: 50%;
+    top: 180%;
+    transform: translate(-50%, 60%);
+    box-shadow:10px 10px #101010;
+    margin-bottom: 20%;
+}
+.bg:hover .pixlw{
+    height: 500px;
+    visibility: visible;
+    right: 10%;
+    top: 50%;
+    transform: translate(-65%, 20%);
+    box-shadow:10px 10px #101010;
+}
+.bg:hover .pick{
+    font-size: 3rem;
+}
+.Top_Interest_Hobbies:hover{
+    margin-bottom: 500px;
+}
+#educ-back{
+    margin-top: 250px ;
+}
+.educ2{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+.educ-container{
+    padding: 30px 10%;
+}
+.block{
+    position: relative;
+    background-color:#81946f;
+    box-shadow:10px 10px #101010;
+    place-items: center;
+    width: 300px;
+}
+.padding{
+    padding: .9rem;
+}
+.pic{
+    background-color: #f4f5f0;
+    height: 250px;
+}
+.round{
+    border-radius: 50%;
+}
+.school-name{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 50%;
+}
+.logo{
+    display: block;
+    margin: 0 auto;
+    height: 250px;
+    margin-top: -6rem;
+    margin-bottom: 2rem; 
+}
+.socials a{
+    color: #f4f5f0;
+    text-decoration: none;
+}
+.row{
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+    line-height: 30px;
+}
+.contact-left p{
+    font-size: 1.2rem;
+}
+.contact-left h1{
+    font-size: 3.2rem;
+}
+#contact-details{
+    margin-bottom: -4rem;
+}
+
+.kapirayt{
+
+    width: min(100%, 90rem);
+    margin-inline: auto;
+}
+
